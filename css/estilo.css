@@ -1,0 +1,407 @@
+/* Fuente google importada */ 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Rajdhani:wght@300&display=swap');
+
+/*     
+font-family: 'Barlow', sans-serif;
+font-family: 'Rajdhani', sans-serif; 
+menu-footer: font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+Colores: 
+ parrafos: #01235d
+ contornos - Hover link: #fd2525 
+ fondos oscuros: #990101 
+ hipervinculos menú:  #083e98 
+ background:  #F6EFDE 
+ background Textos destacados: #fffef6 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url(../img/fondoOk.jpg) no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid  #fd2525;
+    width: 100%;
+    grid-area: header;
+}
+
+header img {
+    /* width: 20%;
+    height: 20%; */
+    /* position: relative; */
+    top: 20px;
+    left: 40%;
+}
+body {
+    background-color: #F6EFDE;
+}
+/* Menú del site */
+nav{
+    grid-area: nav;
+}
+
+a {
+    font-size: 19px;
+    color:  #083e98;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 19px;
+    color:  #fd2525 ;
+}
+
+a:visited {
+    color: none;
+}
+
+.estiloListaMenu {
+    background-image:linear-gradient(to top,#fd252546,#fd252546,#fd252527,#ffffff2b, #ffffff00) ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 1% 0% 1% 0%;
+    margin-bottom: 0%;
+}
+
+.estiloListaMenu li {
+    display: inline;
+    padding: 10px;
+    margin: 30px;
+    position: relative;
+}
+
+/* Destacados */
+
+.destacados {
+    height: 17rem;
+    width: 20rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+    margin: auto;
+    grid-area: destacados;
+}
+
+.destacados h2 {
+    text-align: center;
+}
+
+.noticiasDestacadas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.noticiasDestacadas img {
+    margin-top: 1rem;
+    width: 30%;
+    height: 30%;
+    top: 30%;
+    left: 40%;
+}
+
+.noticiasDestacadas p {
+    margin: 1rem;
+    font-size: 1rem;
+    font-style:italic;
+}
+
+/* H1 */
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #083e98;
+    margin-top: 2rem;
+}
+
+/* TITULO Noticias en vivo  */
+.noticiasVivo {
+    width: 25%;
+    height: 30%;
+    position: fixed;
+    right: 0;
+    bottom: 10%;    
+}
+
+/* section Principales noticias */
+.principalesNoticias {
+    background-color:   #fffef6;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30%;
+}
+
+/* Imagen y texto Economia en Index */
+.principalesNoticias img {
+    border: 1px #fd2525 solid;
+    background-position: center;
+    width: 100%;
+}
+
+.principalesNoticias h2{
+    color: #083e98;
+    font-family: 'Barlow', sans-serif;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.principalesNoticias p {
+    color: #01235d;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+    padding: 7px;
+
+}
+
+/* Section noticias replay */
+.noticiaReplay {
+    background-color:   #fffef6;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30%;
+}
+
+/* video y texto noticias replay en Index */
+.noticiaReplay iframe {
+    border: 1px;
+    background-position: center;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.noticiaReplay h2{
+    color: #083e98;
+    font-family: 'Barlow', sans-serif;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.noticiaReplay p {
+    color: #01235d;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+    padding: 7px;
+
+}
+
+/*  FOOTER */ 
+.footer {
+    padding-top: 1.5rem;
+    background-color:  #990101;
+    text-align:center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    color: antiquewhite;
+    width: 100%;
+    height: 3rem;
+    grid-area: footer;
+}
+
+/* GRID */
+
+h1 {
+    grid-area: h1;
+}
+
+.principalesNoticias {
+    grid-area: noticias1;
+}
+
+.noticiaReplay {
+    grid-area: noticias2;
+}
+
+.gridBody {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "h1 h1 h1"
+    "noticias1 noticias2 destacados"
+    "footer footer footer"
+    ;
+}
+
+/* Página Deportes */
+
+/* Flex Deportes */
+
+.futbol {
+    background-color:   #fffef65e;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    grid-area: futbol;
+}
+
+.futbol img{
+    border: 1px #fd2525 solid;
+    background-position: center;
+    width: 100%;
+}
+.futbol h3 {
+    color: #01235d;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.futbol p{
+    color: #01235d;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+    padding: 7px;
+}
+
+/* Tenis  */
+
+.tenis {
+    background-color:   #fffef65e;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30%;
+    grid-area: tenis;
+}
+
+.tenis img{
+    background-position: center;
+    width: 100%;
+}
+.tenis h3 {
+    color: #01235d;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.tenis p{
+    color: #01235d;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+    padding: 7px;
+}
+
+
+/* Box */
+
+.boxeo {
+    background-color:   #fffef65e;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30%;
+    grid-area: boxeo;
+}
+
+.boxeo img{
+    background-position: center;
+    width: 100%;
+}
+.boxeo h3 {
+    color: #01235d;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.boxeo p{
+    color: #01235d;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+    padding: 7px;
+}
+
+
+.gridDeportes {
+    display: grid;
+    grid-template-areas: 
+    "header header "
+    "nav nav "
+    "futbol  futbol"
+    "destacados destacados"
+    "boxeo tenis"
+    "footer footer"
+    ;
+}
+
+
+/* Media Query Celulares */
+
+@media (max-width:699px){
+    .gridBody {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav "
+        "h1"
+        "noticias1"
+        "noticias2"
+        "destacados"
+        "footer"
+        ;
+    }
+    .noticiasVivo {
+        display: none;
+    }
+    .gridDeportes {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav "
+        "futbol"
+        "destacados"
+        "boxeo"
+        "tenis"
+        "footer"
+        ;
+    }
+
+    html {
+        font-size:60%;
+    }
+
+    header img{
+        margin-top: 10%;
+        margin-left: 10%;
+
+    }
+
+    .estiloListaMenu {
+        position: static;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 40%;
+    }
+}
