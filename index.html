@@ -14,13 +14,15 @@
     />
     <!-- link a CSS -->
     <link rel="stylesheet" href="css/estilo.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="gridBody">
     <!-- Inicio encabezado -->
     <header class="encabezado">
-      <img src="img/logo1.png" alt="logo site" />
+      <img src="img/logo1.png" alt="logo site" data-aos="zoom-in-up" />
       <!-- menú -->
-      <nav>
+      <nav data-aos="fade-up">
         <ul class="estiloListaMenu">
           <li><a href="index.html">Home</a></li>
           <li><a href="../html/politica.html">Política</a></li>
@@ -104,7 +106,12 @@
         cuanto lleguen al Gobierno.
       </p>
     </section>
-    <article class="destacados">
+    <article
+      class="destacados"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
       <h2>Destacados</h2>
       <article class="noticiasDestacadas">
         <img src="/img/futbol.jpg" alt="" />
@@ -136,5 +143,10 @@
         CoderHouse - Comisión 33010
       </p>
     </footer>
+    <!-- Script AOS Iniciado -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

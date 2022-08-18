@@ -14,13 +14,16 @@
     />
     <!-- link a CSS -->
     <link rel="stylesheet" href="../css/estilo.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Inicio encabezado -->
-    <header>
-      <img src="../img/logo1.png" alt="logo site" />
+    <header class="encabezado">
+      <img src="../img/logo1.png" alt="logo site" data-aos="zoom-in-up" />
       <!-- menú -->
-      <nav>
+      <nav data-aos="fade-up">
+        <ul class="estiloListaMenu">
         <ul class="estiloListaMenu">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../html/politica.html">Política</a></li>
@@ -30,11 +33,79 @@
         </ul>
       </nav>
     </header>
-    <br /><br /><br />
+    <section class="gridDeportes">    
+       <section class="futbol">
+      <h3>Buenos Aires: alerta amarillo del SMN por tormentas fuertes</h3>
+      <img class="tormenta" src="../img/tormenta.jpg" alt="tormenta">
+      <p>
+        El Servicio Meteorológico Nacional (SMN) lanzó un alerta amarillo por tormentas para esta noche y mañana a la madrugada en una vasta zona de la provincia de Buenos Aires.
+        En cuanto a las tormentas que se producirán en el centro, sudeste y este de la provincia de Buenos Aires, se aclaró que serán de variada intensidad, y solo algunas serán localmente fuertes. Aún así, se advirtió que habrá intensas precipitaciones en periodos cortos, fuerte actividad eléctrica, ráfagas intensas y ocasional caída de granizo.
+        El Sistema de Alerta Temprana del SMN indicó que las áreas afectadas son Azul, Rauch, Tapalqué, Benito Juárez y Tandil.
+        "El área será afectada por tormentas de variada intensidad, algunas localmente fuertes. Las mismas estarán acompañadas por intensas precipitaciones en cortos periodos, fuerte actividad eléctrica, intensas ráfagas y ocasional caída de granizo", se informó.
+        El SMN agregó que "se estiman valores de precipitación acumulada entre 15 y 40 mm, pudiendo ser superados de manera localizada".
+        El nivel amarillo de alerta implica que este fenómeno meteorológico puede tener “capacidad de daño y riesgo de interrupción momentánea de actividades cotidianas”.
+
+        Para el próximo trismestre el Servicio Meteorológico destacó que habrá lluvias por debajo de lo normal sobre Cuyo, Litoral y el este de Buenos Aires. Además, en La Pampa, el oeste bonaerense y el oeste de Patagonia hay mayores chances de que estas sean normales o inferiores a lo normales. 
+        </p>
+      </section>
+      <section class="tenis">
+        <h3>El tiempo en Buenos Aires</h3>
+        <img src="../img/satelital.jpg" alt="satelital">
+        <p>
+          LATITUD 34° 38' S | LONGITUD 58° 28' O | ALTITUD 25 msnm
+          (1000) CAPITAL FEDERAL. ARGENTINA
+          En la capital federal, para el jueves se prevé tiempo estable, con ambiente frío durante la noche y la mañana, con riesgo de heladas. Cielo mayormente despejado, con viento soplando del sur. Baja sensación térmica por efecto del viento. La semana finalizará con tiempo estable, cielo mayormente despejado y ambiente frío en horas de la noche y la mañana. Riesgo de heladas. En la tarde se notará el paulatino aumento de la temperatura, con viento del sector norte.
+        </p>
+      </section>
+        <section class="boxeo">
+          <h3>Cómo la actividad humana está alterando los ciclos de lluvias y sequías en la cuenca del río Amazonas</h3>
+        <section class="boxeoInfo">
+          <p>           <img src="../img/amazonas.png" alt="amazonas">
+            La alteración de los ciclos hídricos naturales de la cuenca del Amazonas 
+            El citado análisis señala que la acción humana y el cambio climático están alterando la distribución de las precipitaciones en la región de la cuenca del Amazonas, identificando zonas en las que las precipitaciones son cada vez más voluminosas mientras que, en otras, la sequía está más presente. Según el estudio, los modelos hidrológicos y climáticos construidos a partir de imágenes de satélite indican más lluvias e inundaciones en el norte de la Amazonia y sequías más severas en el sur de la región. Por consiguiente, el cambio en el ciclo de las precipitaciones también influye en las crecidas y los caudales de los ríos, lo que afectaría tanto a la fauna como a las poblaciones humanas. 
+            "Los datos apuntan a una reducción de los caudales medios de los ríos del oeste al sur del Amazonas. Mientras que en el norte, hay un escenario de aumento de las lluvias y, en consecuencia, de las inundaciones de los ríos que vienen de Perú y llegan a la Amazonía", expresó Rodrigo Paiva, doctor en Hidrología, Hidroquímica, Suelo y Medio Ambiente por la Universidad de Toulouse, Francia, y uno de los autores del documento.
+          </p>
+        </section>
+      </section>
+      <article class="destacados"       class="destacados"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
+        <h2>Destacados</h2>
+        <article class="noticiasDestacadas">
+          <img src="/img/futbol.jpg" alt="" />
+          <a href="/html/deportes.html">
+            <p>
+              ¡Los agentes de De Jong, en Barcelona para hablar de su futuro!...
+            </p>
+          </a>
+        </article>
+        <article class="noticiasDestacadas">
+          <img src="/img/economiaD.jpg" alt="" />
+          <a href="/html/politica.html">
+            <p>Sergio Massa fue de los primeros en exponer...</p>
+          </a>
+        </article>
+        <article class="noticiasDestacadas">
+          <img src="/img/tormenta.jpg" alt="" />
+          <a href="/html/clima.html">
+            <p>
+              Alerta meteorológica por tormentas y fuertes lluvias en cinco
+              provincias...
+            </p>
+          </a>
+        </article>
+      </article>
+    </section>
     <footer class="footer">
       <p>
         Noticias Web - Creada y diseñada por Gustavo Lionel Vivanco -- Proyecto
         CoderHouse - Comisión 33010
       </p>
+          <!-- Script AOS Iniciado -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

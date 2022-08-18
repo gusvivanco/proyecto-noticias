@@ -14,13 +14,16 @@
     />
     <!-- link a CSS -->
     <link rel="stylesheet" href="../css/estilo.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="gridDeportes">
     <!-- Inicio encabezado -->
-    <header>
-      <img src="../img/logo1.png" alt="logo site" />
+    <header class="encabezado">
+      <img src="../img/logo1.png" alt="logo site" data-aos="zoom-in-up" />
       <!-- menú -->
-      <nav>
+      <nav data-aos="fade-up">
+        <ul class="estiloListaMenu">
         <ul class="estiloListaMenu">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../html/politica.html">Política</a></li>
@@ -64,7 +67,10 @@
           </p>
         </section>
       </section>
-      <article class="destacados">
+      <article class="destacados"       class="destacados"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <h2>Destacados</h2>
         <article class="noticiasDestacadas">
           <img src="/img/futbol.jpg" alt="" />
@@ -96,5 +102,10 @@
         Noticias Web - Creada y diseñada por Gustavo Lionel Vivanco -- Proyecto
         CoderHouse - Comisión 33010
       </p>
+          <!-- Script AOS Iniciado -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

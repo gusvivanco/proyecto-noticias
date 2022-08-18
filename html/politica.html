@@ -14,13 +14,15 @@
     />
     <!-- link a CSS -->
     <link rel="stylesheet" href="../css/estilo.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Inicio encabezado -->
-    <header>
-      <img src="../img/logo1.png" alt="logo site" />
+    <header class="encabezado">
+      <img src="../img/logo1.png" alt="logo site" data-aos="zoom-in-up" />
       <!-- menú -->
-      <nav>
+      <nav data-aos="fade-up">
         <ul class="estiloListaMenu">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../html/politica.html">Política</a></li>
@@ -32,6 +34,63 @@
 
     </header>
     <h1>Mantenete informado con las últimas novedades</h1>
+    <section class="principalesNoticias">
+      <h2>En la reunión de Gabinete, Massa se mostró preocupado por los gastos para importar energía que afectan las reservas del Banco Central</h2>
+      <img src="/img/economiaD.jpg" alt="economia" class="homeEconomia" />
+      <p>
+        El encuentro que se realizó en la Casa Rosada duró poco más de una hora. El presidente Alberto Fernández pidió preservar la inversión en obra pública. Además se hizo hincapié en la necesidad de reducir el déficit fiscal y en mostrar “unidad” de gestión
+        Sentado a la izquierda del jefe de Gabinete, Juan Manzur, el flamante ministro de Economía Sergio Massa fue de los primeros en exponer durante la reunión de gabinete que se realizó en el salón Eva Perón, que duró una hora y 10 minutos esta mañana en la Casa Rosada. Y, además de explicar los ajustes y las medidas que se están tratando de implementar, les planteó su preocupación por las importaciones de energía que están minando las reservas en dólares del Banco Central.
+
+        Luego de las presentaciones de rigor que realizó Manzur, de aquellos funcionarios que no habían estado en reuniones anteriores -Mercedes Marcó del Pont como secretaria de Asuntos Estratégicos, Raúl Rigo que retornó a la secretaría de Hacienda bajo la órbita de Massa, el vicejefe de Gabinete, Juan Manuel Olmos-, nuevamente el tema presupuestario quedó en el centro de la escena. Por ese motivo, en los dos días anteriores el equipo que comanda el tigrense había mantenido encuentros con los diferentes carteras, con la finalidad de recortar gastos y apelar a la austeridad en un momento tan complejo de la economía argentina.
+
+        Massa les reiteró a los integrantes del Gabinete que las importaciones de energía, especialmente de gas licuado y gasoil, son el principal factor que debilita la posibilidad de una recuperación más veloz del nivel de reservas del Central. En julio las importaciones totales de Argentina superaron los 8.000 millones de la divisa norteamericana y una parte importante se debió a las necesidades energéticas. Los colaboradores del ministro confían en que la suba de la temperatura con la llegada de la primavera permitirá un ahorro en este rubro en los próximos meses.
+
+        También les recalcó que un tema central será la reducción del déficit fiscal, un aspecto fundamental que permitirá cumplir las metas comprometidas con el Fondo Monetario Internacional respecto de la deuda externa. El ministro viajará a fines de agosto a Estados Unidos y quiere tener las mayores certezas posibles a la hora de encarar las conversaciones con los organismos internacionales de crédito y con los inversores extranjeros,
+
+        Unos minutos después de las 9, cuando ya iban 40 minutos del cónclave, el presidente Alberto Fernández se sumó a la larga mesa, en la que también sorpresivamente estuvo sentado el santafesino Agustín Rossi, titular de la Agencia Federal de Inteligencia desde principios de junio. El primer mandatario se ubicó entre Manzur y el ministro del Interior, Eduardo Wado de Pedro; cuando tomó la palabra mostró su respaldo a las primeras medidas de Massa y dijo que en esta nueva etapa de gobierno será clave “preservar la inversión en la obra pública, en vivienda, en ciencia y tecnología y en educación”.
+      </p>
+    </section>
+    <article
+      class="destacados"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
+      <h2>Destacados</h2>
+      <article class="noticiasDestacadas">
+        <img src="/img/futbol.jpg" alt="" />
+        <a href="/html/deportes.html">
+          <p>
+            ¡Los agentes de De Jong, en Barcelona para hablar de su futuro!...
+          </p>
+        </a>
+      </article>
+      <article class="noticiasDestacadas">
+        <img src="/img/economiaD.jpg" alt="" />
+        <a href="/html/politica.html">
+          <p>Sergio Massa fue de los primeros en exponer...</p>
+        </a>
+      </article>
+      <article class="noticiasDestacadas">
+        <img src="/img/tormenta.jpg" alt="" />
+        <a href="/html/clima.html">
+          <p>
+            Alerta meteorológica por tormentas y fuertes lluvias en cinco
+            provincias...
+          </p>
+        </a>
+      </article>
+    </article>
+    
+    <section class="noticiaPolitica">
+      <h2>Quién es quién en la política Argentina</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3D82ZgIM6bM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>
+        Ernesto Tenembaum y María O'Donnell te explican en cinco conexiones el mapa político de Argentina, en un año marcado por las elecciones legislativas.
+        Como están conformados los partidos políticos, bloques y todo lo que precisas saber para entender el porque tantos cambios.
+      </p>
+    </section>
+
     
 
     <footer class="footer">
@@ -39,5 +98,10 @@
         Noticias Web - Creada y diseñada por Gustavo Lionel Vivanco -- Proyecto
         CoderHouse - Comisión 33010
       </p>
+          <!-- Script AOS Iniciado -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
